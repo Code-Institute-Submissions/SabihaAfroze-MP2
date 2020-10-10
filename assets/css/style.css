@@ -51,3 +51,15 @@ body {
 	letter-spacing: 3px;
 	color: #aaa;
 	}
+
+.button-parents {
+    padding-top:80px;
+    padding-left:1100px;
+}
+
+.buttonparents{
+    border-style:groove;
+    border-radius:50%;
+    font-size:30px;
+  
+}
