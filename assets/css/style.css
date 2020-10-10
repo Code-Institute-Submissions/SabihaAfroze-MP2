@@ -47,10 +47,15 @@ body {
 
 .content p {
 	text-align: center;
-	font-size: 22px;
+	font-size: 30px;
 	letter-spacing: 3px;
 	color: #aaa;
+   
 	}
+
+.content form{
+    text-align: center;
+}
 
 .button-parents {
     padding-top:80px;
