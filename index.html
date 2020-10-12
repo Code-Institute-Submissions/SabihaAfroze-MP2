@@ -24,28 +24,42 @@
 		        <div class="content">         
 			        <h1 >Let's use our brains to have some fun!!</h1>
 			        <p>Please select your age</p>
-                    <form id="goToPage">
-                    <select name="page" class="custom-select" style="width:10%;" id="inlineFormCustomSelect">
+                    <form >
+                    <select name="page" id="goToPage" class="custom-select" style="width:10%;" ">
                         <option selected >Choose...</option>
-                            <option value="preschooler.html">4-6 years</option>
-                            <option value="kids.html">7-12 years</option>
-                            <option value="highschooler.html">13-18 years</option>
+                            <option value="1">4-6 years</option>
+                            <option value="2">7-12 years</option>
+                            <option value="3">13-18 years</option>
                     </select>
                     <input type="submit" value="Submit" class="buttontheme" />
                     </form>
                     
                     <div class="button-parents">
-                    <button type="button" class="btn btn-danger btn-lg buttonparents animate__animated animate__swing animate__infinite">Parents</button>
+                    <button type="button" onclick="myFunction()" class="btn btn-danger btn-lg buttonparents animate__animated animate__swing animate__infinite">Parents</button>
                     </div>
                 </div>
 
 <script type="text/javascript">
-    $('#goToPage').submit(function(e) {
-        document.location = $(this).find('[name="page"]').val();
+ var optionsToSelect = ['4-6 years','7-12 years' '13-18 years'];
+ var select = document.getElementById( 'goToPage' );
 
-        e.preventDefault();
-        return false;
-    });
+for ( var i = 0, l = select.options.length, o; i < l; i++ )
+{
+  o = select.options[i];
+  if ( optionsToSelect.indexOf( o.text ) != -1 )
+  {
+    o.selected = true;
+  }
+}
+function myFunction() {
+    if (select.options[i].length==1)
+    {location.replace("https://www.w3schools.com")}
+    else if(select.options[i].length==2 )
+    {location.replace("kids.html")}
+    else (select.options[i].length==3)
+    {location.replace("highschooler.html")}
+
+}
 </script>
           
 
@@ -54,11 +68,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/d455032431.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/graingert-wow/1.2.2/wow.js" integrity="sha512-XOCztecGtAOx5nfuYp/FqPdtuAF+0Tz8Sa+RapxHzEv6OxwuqHSHc6kNmPf2a007H2cPdDPcVnyeA9FBHbliQA==" crossorigin="anonymous"></script>       
-<script>
-function myFunction() {
-  document.getElementById("field2").value = document.getElementById("field1").value;
-}
-</script>
 
 </body>
 
