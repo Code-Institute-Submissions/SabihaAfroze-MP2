@@ -86,8 +86,14 @@ background-image: url('../images/cartoonbackground.jpg');
     overflow-y: hidden;
 }
 
-.psimage{
-  padding-top:400px;
-  
-
+.jumbotron{
+    text-align:center;
+    background-color: rgba(118, 241, 35, 0.411);
+    border-radius: .1em;
+    padding-top:50px;
 }
+.psimage{
+  padding-top:200px;
+  
+}
+
