@@ -68,3 +68,26 @@ body {
     font-size:30px;
   
 }
+
+
+.bg-img{
+background-image: url('../images/cartoonbackground.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.psimage{
+  padding-top:400px;
+  
+
+}
