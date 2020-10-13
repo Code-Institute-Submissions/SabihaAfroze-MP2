@@ -20,46 +20,30 @@
 				Video not supported
 			</video>          
 		</div>
-		        <div class="content">         
-			        <h1 >Let's use our brains to have some fun!!</h1>
-			        <p>Please select your age</p>
-                    <form >
-                    <select name="page" id="goToPage" class="custom-select" style="width:10%;" ">
-                        <option selected >Choose...</option>
-                            <option value="1">4-6 years</option>
-                            <option value="2">7-12 years</option>
-                            <option value="3">13-18 years</option>
-                    </select>
-                    <input type="submit" onclick="myFunction()" value="Submit" class="buttontheme" />
-                    </form>
-                    
-                    <div class="button-parents">
-                    <button type="button"  class="btn btn-danger btn-lg buttonparents animate__animated animate__swing animate__infinite"><a href="preschooler.html">Parents</a></button>
-                    </div>
+		        <div class="content">
+                <h1 >Let's use our brains to have some fun!!</h1>
+                <p>You are a </p>
+                
+ 
+  
+            <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3">
+                <a href="preschooler.html"><img src="assets/images/toddler.gif" alt="1"  class=" img-responsive center-block" style="height:125%;width:125%;padding-left:300px;padding-top:10px;" /></a>
+                <a href="preschooler.html"><p class=" text-center animate__animated animate__heartBeat animate__infinite	infinite" style="padding-left:300px;">Toddler</p>
                 </div>
+            <div class="col-xs-3 col-sm-3 col-md-3">
+                <a href="kids.html"><img src="assets/images/kid.gif" alt="1"  class="img-responsive center-block" style="height:120%;width:120%;padding-left:300px;padding-top:10px;"/>
+                <a href="kids.html"><p class=" text-center animate__animated animate__heartBeat animate__infinite	infinite" style="padding-left:300px;">Kid</p>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3">
+                <a href="parents.html"><img src="assets/images/parents.png" alt="1"  class="img-responsive center-block" style="height:120%;width:120%;margin-right:0px;padding-left:300px;padding-top:10px;"/>
+                <a href="preschooler.html"><p class=" text-center animate__animated animate__heartBeat animate__infinite	infinite" style="padding-left:300px;">Parent</p>
+            </div>
+            
+        </div>
+         </div>
 
-<script type="text/javascript">
- var optionsToSelect = ['4-6 years','7-12 years' '13-18 years'];
- var select = document.getElementById( 'goToPage' );
 
-for ( var i = 0, l = select.options.length, o; i < l; i++ )
-{
-  o = select.options[i];
-  if ( optionsToSelect.indexOf( o.text ) != -1 )
-  {
-    o.selected = true;
-  }
-}
-function myFunction() {
-    if (select.options[i].length==1)
-    {location.replace("https://www.w3schools.com")}
-    else if(select.options[i].length==2 )
-    {location.replace("kids.html")}
-    else (select.options[i].length==3)
-    {location.replace("highschooler.html")}
-
-}
-</script>
           
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

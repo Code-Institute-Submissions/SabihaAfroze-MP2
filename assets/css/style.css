@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Love Ya Like A Sister', cursive;
-    
+    overflow-x:hidden;
     
 }
 
@@ -41,7 +41,7 @@ body {
 	text-transform: uppercase;
     font-weight: 300;
 	color: #fff;
-	padding-top: 15%;
+	padding-top: 5%;
 	margin-bottom: 10px;
 	}
 
@@ -53,21 +53,7 @@ body {
    
 	}
 
-.content form{
-    text-align: center;
-}
 
-.button-parents {
-    padding-top:80px;
-    padding-left:1100px;
-}
-
-.buttonparents{
-    border-style:groove;
-    border-radius:50%;
-    font-size:30px;
-  
-}
 
 
 .bg-img{
