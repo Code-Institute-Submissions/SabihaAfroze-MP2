@@ -9,26 +9,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/quiztoddler.js" async type="text/javascript"></script>
     <title>Let's Have Fun|Fun activities for Children!</title>
 </head>
+<body class="bg-mathstoddler">
+<h1 class="page-title">Maths & Numbers</h1>
+  <div class="overlay-text visible">
+    Click to Start
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    GAME OVER
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    VICTORY
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
 
-<body class="bg-img">
-<EMBED src="assets/audio/bgmusic4preschooler.mp3" autostart=true loop=true hidden=true>
-<div class="row psimage">
-    <div class="col-sm-6">
-        <a href="maths4toddler.html"><img src="assets/images/redbutton.png" alt="Redbutton" class="rounded-circle mr-3" style="height:260px;width:260px;" ></a>
+<div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        Time <span id="time-remaining">100</span>
+      </div>
+      <div class="game-info">
+        Flips <span id="flips">0</span>
+      </div>
     </div>
-    <div class="col-sm-6">
-    <a href="#"> <img src="assets/images/bluebutton.png" alt="Bluebutton" class="rounded-circle mr-3" style="height:300px;width:300px;"></a>
+    <div class="math-quiz">
+      <div id="quiz"></div>
+        <button id="submit">Get Results</button>
+        <div id="results"></div>
     </div>
 </div>
-
-
-<script>
-        alert("Hi Preschooler!Let's play some Maths and Memory games!!");
-        
-    </script>
-
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -36,5 +48,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/graingert-wow/1.2.2/wow.js" integrity="sha512-XOCztecGtAOx5nfuYp/FqPdtuAF+0Tz8Sa+RapxHzEv6OxwuqHSHc6kNmPf2a007H2cPdDPcVnyeA9FBHbliQA==" crossorigin="anonymous"></script>       
 
 </body>
-
 </html>
