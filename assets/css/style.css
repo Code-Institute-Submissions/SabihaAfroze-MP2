@@ -53,8 +53,7 @@ body {
    
 	}
 
-
-
+/*----style for */
 
 .bg-img{
 background-image: url('../images/cartoonbackground.jpg');
@@ -86,6 +85,8 @@ background-image: url('../images/cartoonbackground.jpg');
 .bg-light{
     background-color: rgb(158, 255, 47);
 }
+
+/*----style for maths4toddler.html----*/
 
 .mathstoddler{
     background-color: rgba(238, 255, 0, 0.781);
