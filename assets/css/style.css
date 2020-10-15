@@ -82,14 +82,14 @@ background-image: url('../images/cartoonbackground.jpg');
   
 }
 
-.bg-light{
-    background-color: rgb(158, 255, 47);
+.bg{
+    background: radial-gradient(rgba(158, 247, 118, 0.719), rgba(14, 189, 23, 0.842)); 
 }
 
 /*----style for maths4toddler.html----*/
 
 .mathstoddler{
-    background-color: rgba(238, 255, 0, 0.781);
+    background: radial-gradient(rgba(238, 255, 0, 0.904), rgba(218, 59, 32, 0.973));
 }
 
 #button {
@@ -125,4 +125,19 @@ background-image: url('../images/cartoonbackground.jpg');
 #picture {
 	width: 375px;
 	height: 245px;
+}
+
+/*---style for memory4toddler---*/
+
+.page-title {
+  color: #3D2200;
+  font-weight: normal;
+  text-align: center;
+  font-size: 6em;
+}
+
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
 }
