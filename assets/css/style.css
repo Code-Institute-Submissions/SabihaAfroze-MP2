@@ -91,6 +91,25 @@ background-image: url('../images/cartoonbackground.jpg');
     background-color: rgba(238, 255, 0, 0.781);
 }
 
+#button {
+	background: rgb(194, 35, 7);
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	transition-duration: .5s;
+	margin-top: 15px;
+}
+
+#button:hover {
+	background: white;
+	border: 1px solid rgba(199, 221, 2, 0.863);
+	color: black;
+	cursor: pointer;
+
+}
+
 #results_maths {
 	visibility: hidden;
 	background: #ff545a6e;
