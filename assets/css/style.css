@@ -83,7 +83,26 @@ background-image: url('../images/cartoonbackground.jpg');
   
 }
 
-.mathstoddler{
-    background-color: rgba(251, 255, 0, 0.918);
+.bg-light{
+    background-color: rgb(158, 255, 47);
 }
 
+.mathstoddler{
+    background-color: rgba(238, 255, 0, 0.781);
+}
+
+#results_maths {
+	visibility: hidden;
+	background: #ff545a6e;
+	padding: 10px 20px 10px 20px;
+	width: 400px;
+	border-radius: 20px;
+	float: left;
+	margin-left: 20px;
+	font-size: 30px;
+}
+
+#picture {
+	width: 375px;
+	height: 245px;
+}

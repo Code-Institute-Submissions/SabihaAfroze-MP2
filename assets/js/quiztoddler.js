@@ -50,3 +50,29 @@ function check(){
     if (question10 == "2") {
 		correct++;
     }
+
+    var pictures = ["assets/images/result/trophy.gif", "assets/images/result/nice.gif"];
+	var messages = ["Conratulations!", "You are doing great!"];
+	var score;
+
+	if (correct == 0) {
+		score = 1;
+	}
+
+	if (correct > 0 && correct < 9) {
+		score = 1;
+	}
+
+	if (correct == 3) {
+		score = 0;
+	}
+    
+
+	document.getElementById("results_maths").style.visibility = "visible";
+
+	document.getElementById("message").innerHTML = messages[score];
+	document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
+    document.getElementById("picture").src = pictures[score];
+    console.log(correct);
+    }
+    
