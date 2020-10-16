@@ -6,3 +6,13 @@ class AudioController {
         this.winSound = new Audio('assets/audio/win.wav');
         this.timeOverSound = new Audio('assets/audio/timeover.wav.wav');
     }
+
+    playMusic() {
+        this.bgMusic.play();
+    }
+
+    pauseMusic(){
+        this.bgMusic.pause();
+        this.bgMusic.currentTime = 0;
+    }
+    }
