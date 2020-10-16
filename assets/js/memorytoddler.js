@@ -5,6 +5,8 @@ class AudioController {
         this.matchSound = new Audio('assets/audio/match1.wav');
         this.winSound = new Audio('assets/audio/win.wav');
         this.timeOverSound = new Audio('assets/audio/timeover.wav');
+        this.bgMusic.volume = 0.4;
+        this.bgMusic.loop = true;
     }
 
     playMusic() {
