@@ -40,8 +40,8 @@ class AudioController {
 
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
-    let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new MixOrMatch(100, cards);
+    let blocks = Array.from(document.getElementsByClassName('block'));
+    let game = new MemoryToddlerMatch(100, blocks);
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
