@@ -41,7 +41,7 @@ class AudioController {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let blocks = Array.from(document.getElementsByClassName('block'));
-    let game = new MemoryToddlerMatch(100, blocks);
+    let game = new MemoryToddler(100, blocks);
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
@@ -49,3 +49,10 @@ function ready() {
             game.startGame();
         });
     });
+
+    blocks.forEach(block => {
+        block.addEventListener('click', () => {
+            game.flipCard(block);
+        });
+    });
+}
