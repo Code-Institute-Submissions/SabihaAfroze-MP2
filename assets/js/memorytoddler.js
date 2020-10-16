@@ -9,11 +9,11 @@ class AudioController {
         this.bgMusic.loop = true;
     }
 
-    playMusic() {
+    startMusic() {
         this.bgMusic.play();
     }
 
-    pauseMusic(){
+    stopMusic(){
         this.bgMusic.pause();
         this.bgMusic.currentTime = 0;
     }
@@ -44,11 +44,26 @@ class AudioController {
         this.audioController = new AudioController();
     }
 
+    startGame() {
+        this.totalClicks = 0;
+        this.timeRemaining = this.totalTime;
+        this.blockToCheck = null;
+        this.matchedBlocks = [];
+        this.busy = true;
+        setTimeout(() => {
+            this.audioController.startMusic();
+            this.shuffleBlocks(this.cardsArray);
+            this.countdown = this.startCountdown();
+            this.busy = false;
+        }, 500)
+        this.hideBlocks();
+        this.timer.innerText = this.timeRemaining;
+        this.ticker.innerText = this.totalClicks;
+    }
+
     if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', ready);
-} else {
-    ready();
-}
+    document.addEventListener('DOMContentLoaded', ready);}
+     else { ready();}
 
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
