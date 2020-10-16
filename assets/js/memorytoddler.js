@@ -32,6 +32,16 @@ class AudioController {
 
     }
 
+    class MemoryToddler {
+    constructor(totalTime, blocks) {
+        this.blocksArray = blocks;
+        this.totalTime = totalTime;
+        this.timeRemaining = totalTime;
+        this.timer = document.getElementById('time-remaining')
+        this.ticker = document.getElementById('flips');
+        this.audioController = new AudioController();
+    }
+
     if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
 } else {
