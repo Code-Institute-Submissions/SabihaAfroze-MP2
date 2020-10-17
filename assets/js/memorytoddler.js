@@ -122,6 +122,15 @@ class AudioController {
             this.victory();
     }
 
+    blockMismatch(block1, block2) {
+        this.busy = true;
+        setTimeout(() => {
+            block1.classList.remove('visible');
+            block2.classList.remove('visible');
+            this.busy = false;
+        }, 1000);
+    }
+
     if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);}
      else { ready();}
