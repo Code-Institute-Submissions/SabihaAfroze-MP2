@@ -82,6 +82,27 @@ class AudioController {
         document.getElementById('victory-text').classList.add('visible');
     }
 
+    hideBlocks() {
+        this.blocksArray.forEach(block => {
+            block.classList.remove('visible');
+            block.classList.remove('matched');
+        });
+    }
+    flipBlock(block) {
+        if(this.canFlipBlock(block)) {
+            this.audioController.flip();
+            this.totalClicks++;
+            this.ticker.innerText = this.totalClicks;
+            card.classList.add('visible');
+
+            if(this.blockToCheck) {
+                this.checkForBlockMatch(block);
+            } else {
+                this.blockToCheck = block;
+            }
+        }
+    }
+
     if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);}
      else { ready();}
@@ -100,7 +121,7 @@ function ready() {
 
     blocks.forEach(block => {
         block.addEventListener('click', () => {
-            game.flipCard(block);
+            game.flipBlock(block);
         });
     });
 }
