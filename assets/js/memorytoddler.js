@@ -61,6 +61,15 @@ class AudioController {
         this.ticker.innerText = this.totalClicks;
     }
 
+    startCountdown() {
+        return setInterval(() => {
+            this.timeRemaining--;
+            this.timer.innerText = this.timeRemaining;
+            if(this.timeRemaining === 0)
+                this.timeOver();
+        }, 1000);
+    }
+
     if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);}
      else { ready();}
