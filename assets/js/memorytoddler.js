@@ -112,6 +112,16 @@ class AudioController {
         this.blockToCheck = null;
     }
 
+    blockMatch(block1, block2) {
+        this.matchedBlocks.push(block1);
+        this.matchedBlocks.push(block2);
+        block1.classList.add('matched');
+        block2.classList.add('matched');
+        this.audioController.match();
+        if(this.matchedCards.length === this.blocksArray.length)
+            this.victory();
+    }
+
     if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);}
      else { ready();}
