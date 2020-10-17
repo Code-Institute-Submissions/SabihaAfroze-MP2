@@ -52,7 +52,7 @@ class AudioController {
         this.busy = true;
         setTimeout(() => {
             this.audioController.startMusic();
-            this.shuffleBlocks(this.cardsArray);
+            this.shuffleBlocks(this.blocksArray);
             this.countdown = this.startCountdown();
             this.busy = false;
         }, 500)
@@ -107,7 +107,7 @@ class AudioController {
         if(this.getBlockType(block) === this.getBlockType(this.blockToCheck))
             this.blockMatch(block, this.blockToCheck);
         else 
-            this.blockMismatch(card, this.blockToCheck);
+            this.blockMismatch(block, this.blockToCheck);
 
         this.blockToCheck = null;
     }
@@ -118,7 +118,7 @@ class AudioController {
         block1.classList.add('matched');
         block2.classList.add('matched');
         this.audioController.match();
-        if(this.matchedCards.length === this.blocksArray.length)
+        if(this.matchedBlocks.length === this.blocksArray.length)
             this.victory();
     }
 
@@ -130,6 +130,21 @@ class AudioController {
             this.busy = false;
         }, 1000);
     }
+
+    shuffleBlocks(blocksArray) { // Fisher-Yates Shuffle Algorithm.
+        for (let i = blocksArray.length-1; i > 0; i--) {
+            let randIndex = Math.floor(Math.random() * (i + 1));
+            blocksArray[randIndex].style.order = i;
+            blocksArray[i].style.order = randIndex;
+        }
+    }
+    getBlockType(block) {
+        return block.getElementsByClassName('block-value')[0].src;
+    }
+    canFlipBlock(block) {
+        return !this.busy && !this.matchedBlocks.includes(block) && block !== this.blockToCheck;
+    }
+}
 
     if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);}
