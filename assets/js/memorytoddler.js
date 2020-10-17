@@ -93,7 +93,7 @@ class AudioController {
             this.audioController.flip();
             this.totalClicks++;
             this.ticker.innerText = this.totalClicks;
-            card.classList.add('visible');
+            block.classList.add('visible');
 
             if(this.blockToCheck) {
                 this.checkForBlockMatch(block);
@@ -101,6 +101,15 @@ class AudioController {
                 this.blockToCheck = block;
             }
         }
+    }
+
+    checkForBlockMatch(block) {
+        if(this.getBlockType(block) === this.getBlockType(this.blockToCheck))
+            this.blockMatch(block, this.blockToCheck);
+        else 
+            this.blockMismatch(card, this.blockToCheck);
+
+        this.blockToCheck = null;
     }
 
     if (document.readyState == 'loading') {
