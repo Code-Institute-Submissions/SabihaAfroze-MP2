@@ -113,18 +113,20 @@ background-image: url('../images/cartoonbackground.jpg');
 
 #results_maths {
 	visibility: hidden;
-	background: #ff545a6e;
+	background: #ffa8abc7;
 	padding: 10px 20px 10px 20px;
 	width: 400px;
 	border-radius: 20px;
-	float: left;
-	margin-left: 20px;
+	float: center;
+	margin-left: 220px;
 	font-size: 30px;
 }
 
 #picture {
 	width: 375px;
 	height: 245px;
+    float:center;
+    padding-right:10px;
 }
 
 /*---style for memory4toddler the style is highly inspired from this video "https://www.youtube.com/watch?v=28VfzEiJgy4&t=82s"---*/

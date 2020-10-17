@@ -52,18 +52,18 @@ function check(){
     }
 
     var pictures = ["assets/images/result/trophy.gif", "assets/images/result/nice.gif","assets/images/result/retry.gif"];
-	var messages = ["Conratulations!", "You are doing great!,Don't give up!"];
+	var messages = ["Congratulations!", "You are doing great!","Don't give up!"];
 	var score;
 
 	if (correct == 0) {
 		score = 2;
 	}
 
-	if (correct > 0 && correct < 9) {
+	if (correct > 0 && correct < 10) {
 		score = 1;
 	}
 
-	if (correct == 3) {
+	if (correct == 10) {
 		score = 0;
 	}
     
