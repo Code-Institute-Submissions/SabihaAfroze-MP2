@@ -70,6 +70,18 @@ class AudioController {
         }, 1000);
     }
 
+    timeOver() {
+        clearInterval(this.countdown);
+        this.audioController.timeOver();
+        document.getElementById('time-over-text').classList.add('visible');
+    }
+
+    victory() {
+        clearInterval(this.countdown);
+        this.audioController.win();
+        document.getElementById('victory-text').classList.add('visible');
+    }
+
     if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);}
      else { ready();}
