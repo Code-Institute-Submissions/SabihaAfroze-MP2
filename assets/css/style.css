@@ -53,6 +53,7 @@ body {
    
 	}
 
+
 /*----style for */
 .bg{
     background: radial-gradient(rgba(158, 247, 118, 0.719), rgba(14, 189, 23, 0.842)); 
@@ -128,6 +129,7 @@ body {
       height: 260px;
       width:260px;
   }
+ 
 }
 
 @media only screen and (min-width: 992px) {
@@ -149,9 +151,9 @@ body {
       width:260px;
   }
 }
-} 
 
-@media screen (min-width: 768px) {
+
+@media only screen and (min-width: 768px) {
    
 
 .back-icon{
@@ -167,8 +169,8 @@ body {
       height: 260px;
       width:260px;
   }
-}
-}
+
+
 } 
 
 
@@ -206,7 +208,7 @@ body {
 	padding: 10px 20px 10px 20px;
 	width: 400px;
 	border-radius: 20px;
-	float: center;
+	
 	margin-left: 220px;
 	font-size: 30px;
 }
@@ -214,7 +216,7 @@ body {
 #picture {
 	width: 375px;
 	height: 245px;
-    float:center;
+    
     padding-right:10px;
 }
 
