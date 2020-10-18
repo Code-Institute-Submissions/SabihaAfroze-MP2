@@ -54,6 +54,10 @@ body {
 	}
 
 /*----style for */
+.bg{
+    background: radial-gradient(rgba(158, 247, 118, 0.719), rgba(14, 189, 23, 0.842)); 
+}
+
 
 .bg-img{
     background-image: url('../images/cartoonbackground.jpg');
@@ -111,8 +115,8 @@ body {
     box-sizing: border-box;
 }  
 .back-icon{
-    height:100px;
-    width:100px;}
+    height:90px;
+    width:90px;}
 
   .col-tod{padding-bottom:40px;}
   .redbutton{
@@ -170,9 +174,6 @@ body {
 
 
 
-.bg{
-    background: radial-gradient(rgba(158, 247, 118, 0.719), rgba(14, 189, 23, 0.842)); 
-}
 
 /*----style for maths4toddler.html----*/
 
