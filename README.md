@@ -56,7 +56,8 @@ The reason that this wireframe is vey concise is that my initial thoughts were n
 ### 4. Parent Page
 * The parent page starts with the instructions for the parents about how to play the game both for toddlers and kids.
 * Below what some parents think about the website is added for better understanding.
-* After that if there is any recommendation then parents can send mail through email.js api.
+* After that if there is any recommendation then parents can send mail through email.js api though I have used the api according to the tutorial of code institute, the api is not working in my website.
+* In the nav bar there is a home button which is just for show not for any work.
 
 ### 5. Number Game Page
 * This page is designed with 10 questions and based on the number of correct answers 3 different motivational text along with picture gif will show by clicking get result. 
