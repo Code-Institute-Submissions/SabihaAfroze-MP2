@@ -296,6 +296,15 @@ body {
 
 /*--style for kids.html--*/
 
+.quotes-container{
+    padding-top:5%;
+}
+.contact{
+    background-color: rgba(118, 241, 35, 0.411);
+}
 
-
+#contact-form{
+    padding-top:5%;
+    padding-bottom:2%;
+}
 }
