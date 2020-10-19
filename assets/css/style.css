@@ -6,6 +6,7 @@ body {
     font-family: 'Love Ya Like A Sister', cursive;
     overflow-x:hidden;
     
+    
 }
 
 .background-wrap {
@@ -127,16 +128,16 @@ body {
 	visibility: hidden;
 	background: #ffa8abc7;
 	padding: 10px 20px 10px 20px;
-	width: 400px;
+	width:40%;
 	border-radius: 20px;
 	
-	margin-left: 220px;
+	
 	font-size: 30px;
 }
 
 #picture {
-	width: 375px;
-	height: 245px;
+	width: 40%;
+	height: 40%;
     
     padding-right:10px;
 }
@@ -147,7 +148,7 @@ body {
   color: #3D2200;
   font-weight: normal;
   text-align: center;
-  font-size: 6em;
+  font-size: 5em;
 }
 
 .game-info-container {
