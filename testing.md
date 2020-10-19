@@ -8,7 +8,7 @@
 
 To initially test the website I used the following validators:
 
-1.  [W3C Markup Validation Service](https://validator.w3.org/) for HTML I inserted the code into the validator via direct input. I consistently checked used this throughut previous checks, where any errors/warnings were addressed directly and documented in commits. Upon a final check no erros/warnings were present.
+1.  [W3C Markup Validation Service](https://validator.w3.org/) for HTML I inserted the code into the validator via direct input. I consistently checked used this throughut previous checks, where any errors/warnings were addressed directly and documented in commits. Upon a final check few erros/warnings were present.
 
 2.  [W3C CSS Validation Service](https://validator.w3.org/#validate_by_input) for CSS I inserted the code into the validator via direct input. No errors were were found upon final check.
 
