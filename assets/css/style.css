@@ -4,10 +4,27 @@
 
 body {
     font-family: 'Love Ya Like A Sister', cursive;
-    overflow-x:hidden;
-    
+    overflow-x:hidden;   
+}
+
+.bg-nav{
+    background-color: transparent;
+}
+
+.nav-button-color {
+    background-color: rgb(131, 3, 3)
+}
+
+.nav-item-color{
+    color:rgb(252, 252, 133);
+    font-size:20px;
+}
+
+.ul-color{
+    background-color: rgba(128, 128, 128, 0.5);
     
 }
+
 
 .background-wrap {
 	position: fixed;
@@ -33,7 +50,7 @@ body {
 	width: 100%;
 	min-height: 100%;
 	z-index: 1000;
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0, 0, 0, 0);
 	}
 			
 .content h1 {
