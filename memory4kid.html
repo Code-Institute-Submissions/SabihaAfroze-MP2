@@ -1,271 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/memorykid.js" async type="text/javascript"></script>
-    <title>Let's Have Fun|Fun activities for Children!</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/memorykid.js" async type="text/javascript"></script>
+	<title>Let's Have Fun|Fun activities for Children!</title>
 </head>
+
 <body class="mathstoddler ">
 
-    <nav class="navbar navbar-light bg">
-        <a class="navbar-brand" href="kids.html"><img src="assets/images/backbutton.png" alt="back"  class=" img-responsive center-block" style="height:50px;width:50px;" /></a>
-        
-        <form class="form-inline">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/home.gif" alt="home"  class=" img-responsive center-block" style="height:90px;width:90px;" /></a>
-        </form>
-    </nav>
+	<nav class="navbar navbar-light bg">
+		<a class="navbar-brand"
+			href="kids.html"><img src="assets/images/backbutton.png" alt="back"  class=" img-responsive center-block" style="height:50px;width:50px;" /></a>
 
-<div >
+			<form class="form-inline">
+				<a class="navbar-brand"
+					href="index.html"><img src="assets/images/home.gif" alt="home"  class=" img-responsive center-block" style="height:90px;width:90px;" /></a>
+			</form>
+	</nav>
 
-<!--the memory game is learned from https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript this site-->
+	<div>
 
-    <h1 class="page-title">Memory Game</h1>
-    
-    <div class="overlay-text visible">
-    
-        Click to Start
-    </div>
-    
-    <div id="time-over-text" class="overlay-text">
-    
-        TIME OVER
-    
-        <span class="overlay-text-small">Click to Restart</span>
+		<!--the memory game is learned from https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript this site-->
 
-    </div>
+		<h1 class="page-title">Memory Game</h1>
 
-    <div id="victory-text" class="overlay-text">
-    
-        VICTORY
-    
-        <span class="overlay-text-small">Click to Restart</span>
-    </div>
+		<div class="overlay-text visible">
 
-<div class="game-container">
-        
-    <div class="game-info-container">
-            
-        <div class="game-info">
-            Time <span id="time-remaining">100</span>
+			Click to Start
+		</div>
+
+		<div id="time-over-text" class="overlay-text">
+
+			TIME OVER
+
+			<span class="overlay-text-small">Click to Restart</span>
+
+		</div>
+
+		<div id="victory-text" class="overlay-text">
+
+			VICTORY
+
+			<span class="overlay-text-small">Click to Restart</span>
+		</div>
+
+		<div class="game-container">
+
+			<div class="game-info-container">
+
+				<div class="game-info">
+					Time <span id="time-remaining">100</span>
+				</div>
+
+				<div class="game-info">
+
+					Flips <span id="flips">0</span>
+
+				</div>
+
+			</div>
+
+			<div class="block">
+
+				<div class="block-back block-face">
+
+					<img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
+
         </div>
 
-        <div class="game-info">
-            
-            Flips <span id="flips">0</span>
-    
-        </div>
-        
-    </div>
+					<div class="block-front block-face">
 
-    <div class="block">
+						<img class="block-value" style="height:230px;width:140px;" src="assets/images/memorykid/giraffe.jpg" alt="giraffe">
 
-        <div class="block-back block-face">
-
-            <img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
-      
         </div>
 
-        <div class="block-front block-face">
-        
-            <img class="block-value" style="height:230px;width:140px;" src="assets/images/memorykid/giraffe.jpg" alt="giraffe">
-      
-        </div>
-        
-    </div>
+					</div>
 
-    <div class="block">
+					<div class="block">
 
-        <div class="block-back block-face">
+						<div class="block-back block-face">
 
-            <img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
-      
+							<img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
+
         </div>
 
-        <div class="block-front block-face">
-        
-            <img class="block-value" style="height:230px;width:140px;" src="assets/images/memorykid/giraffe.jpg" alt="giraffe">
-      
-        </div>
-        
-    </div>
-    
-    <div class="block">
-      
-        <div class="block-back block-face">
+							<div class="block-front block-face">
 
-            <img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
-        
+								<img class="block-value" style="height:230px;width:140px;" src="assets/images/memorykid/giraffe.jpg" alt="giraffe">
+
         </div>
-      
-        <div class="block-front block-face">
-        
-            <img class="block-value" style="height:230px;width:140px;" src="assets/images/memorykid/horse.jpg" alt="horse">
-      
+
+							</div>
+
+							<div class="block">
+
+								<div class="block-back block-face">
+
+									<img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
+
+        </div>
+
+									<div class="block-front block-face">
+
+										<img class="block-value" style="height:230px;width:140px;" src="assets/images/memorykid/horse.jpg" alt="horse">
+
       </div>
-    
-    </div>
-    
-    <div class="block">
-      
-        <div class="block-back block-face">
 
-            <img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
-        
+									</div>
+
+									<div class="block">
+
+										<div class="block-back block-face">
+
+											<img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
+
         </div>
-      
-        <div class="block-front block-face">
-        
-            <img class="block-value" style="height:230px;width:140px;" src="assets/images/memorykid/horse.jpg" alt="horse">
-      
+
+											<div class="block-front block-face">
+
+												<img class="block-value" style="height:230px;width:140px;" src="assets/images/memorykid/horse.jpg" alt="horse">
+
       </div>
-    
-    </div>
 
-    <div class="block">
-      
-        <div class="block-back block-face">
-        
-            <img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
-        
-        </div>
+											</div>
 
-        <div class="block-front block-face">
+											<div class="block">
 
-            <img class="block-value" style="height:200px;width:140px;" src="assets/images/memorykid/lion.jpg" alt="lion">
-        
-        </div>
+												<div class="block-back block-face">
 
-    </div>
-
-    <div class="block">
-      
-        <div class="block-back block-face">
-        
-            <img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
-        
-        </div>
-
-        <div class="block-front block-face">
-
-            <img class="block-value" style="height:200px;width:140px;" src="assets/images/memorykid/lion.jpg" alt="lion">
-        
-        </div>
-
-    </div>
-
-    <div class="block">
-      
-        <div class="block-back block-face">
-        
-            <img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
-      
-        </div>
-
-        <div class="block-front block-face">
-
-            <img class="block-value" style="height:230px;width:140px;" src="assets/images/memorykid/sheep.png" alt="sheep">
-        
-        </div>
-
-    </div>
-
-    <div class="block">
-      
-        <div class="block-back block-face">
-        
-            <img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
-      
-        </div>
-
-        <div class="block-front block-face">
-
-            <img class="block-value" style="height:230px;width:140px;" src="assets/images/memorykid/sheep.png" alt="sheep">
-        
-        </div>
-
-    </div>
-
-    <div class="block">
-
-        <div class="block-back block-face">
-        
-            <img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
-      
-        </div>
-
-        <div class="block-front block-face">
-        
-            <img class="block-value" style="height:210px;width:140px;" src="assets/images/memorykid/tiger.jpg" alt="tiger">
+													<img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
 
         </div>
 
-    </div>
+													<div class="block-front block-face">
 
-    <div class="block">
-
-        <div class="block-back block-face">
-        
-            <img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
-      
-        </div>
-
-        <div class="block-front block-face">
-        
-            <img class="block-value" style="height:210px;width:140px;" src="assets/images/memorykid/tiger.jpg" alt="tiger">
+														<img class="block-value" style="height:200px;width:140px;" src="assets/images/memorykid/lion.jpg" alt="lion">
 
         </div>
 
-    </div>
+													</div>
 
-    <div class="block">
+													<div class="block">
 
-        <div class="block-back block-face">
-        
-            <img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
-        
+														<div class="block-back block-face">
+
+															<img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
+
         </div>
 
-        <div class="block-front block-face">
+															<div class="block-front block-face">
 
-            <img class="block-value" style="height:230px;width:140px;" src="assets/images/memorykid/zebra.jpg" alt="zebra">
-        
-        </div>
-    
-    </div>
+																<img class="block-value" style="height:200px;width:140px;" src="assets/images/memorykid/lion.jpg" alt="lion">
 
-    <div class="block">
-
-        <div class="block-back block-face">
-        
-            <img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
-        
         </div>
 
-        <div class="block-front block-face">
+															</div>
 
-            <img class="block-value" style="height:230px;width:140px;" src="assets/images/memorykid/zebra.jpg" alt="zebra">
-        
+															<div class="block">
+
+																<div class="block-back block-face">
+
+																	<img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
+
         </div>
-    
-    </div>
 
-</div>
-</div>
+																	<div class="block-front block-face">
+
+																		<img class="block-value" style="height:230px;width:140px;" src="assets/images/memorykid/sheep.png" alt="sheep">
+
+        </div>
+
+																	</div>
+
+																	<div class="block">
+
+																		<div class="block-back block-face">
+
+																			<img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
+
+        </div>
+
+																			<div class="block-front block-face">
+
+																				<img class="block-value" style="height:230px;width:140px;" src="assets/images/memorykid/sheep.png" alt="sheep">
+
+        </div>
+
+																			</div>
+
+																			<div class="block">
+
+																				<div class="block-back block-face">
+
+																					<img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
+
+        </div>
+
+																					<div class="block-front block-face">
+
+																						<img class="block-value" style="height:210px;width:140px;" src="assets/images/memorykid/tiger.jpg" alt="tiger">
+
+        </div>
+
+																					</div>
+
+																					<div class="block">
+
+																						<div
+																							class="block-back block-face">
+
+																							<img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
+
+        </div>
+
+																							<div
+																								class="block-front block-face">
+
+																								<img class="block-value" style="height:210px;width:140px;" src="assets/images/memorykid/tiger.jpg" alt="tiger">
+
+        </div>
+
+																							</div>
+
+																							<div class="block">
+
+																								<div
+																									class="block-back block-face">
+
+																									<img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
+
+        </div>
+
+																									<div
+																										class="block-front block-face">
+
+																										<img class="block-value" style="height:230px;width:140px;" src="assets/images/memorykid/zebra.jpg" alt="zebra">
+
+        </div>
+
+																									</div>
+
+																									<div class="block">
+
+																										<div
+																											class="block-back block-face">
+
+																											<img class="triangle-pattern" src="assets/images/memorykid/triangle-pattern.jpg" alt="pattern">
+
+        </div>
+
+																											<div
+																												class="block-front block-face">
+
+																												<img class="block-value" style="height:230px;width:140px;" src="assets/images/memorykid/zebra.jpg" alt="zebra">
+
+        </div>
+
+																											</div>
+
+																										</div>
+																									</div>
 
 
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/d455032431.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/graingert-wow/1.2.2/wow.js" integrity="sha512-XOCztecGtAOx5nfuYp/FqPdtuAF+0Tz8Sa+RapxHzEv6OxwuqHSHc6kNmPf2a007H2cPdDPcVnyeA9FBHbliQA==" crossorigin="anonymous"></script>       
+																									<script
+																										src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+																										integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+																										crossorigin="anonymous">
+																									</script>
+																									<script
+																										src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+																										integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+																										crossorigin="anonymous">
+																									</script>
+																									<script
+																										src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+																										integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+																										crossorigin="anonymous">
+																									</script>
+																									<script
+																										src="https://kit.fontawesome.com/d455032431.js"
+																										crossorigin="anonymous">
+																									</script>
+																									<script
+																										src="https://cdnjs.cloudflare.com/ajax/libs/graingert-wow/1.2.2/wow.js"
+																										integrity="sha512-XOCztecGtAOx5nfuYp/FqPdtuAF+0Tz8Sa+RapxHzEv6OxwuqHSHc6kNmPf2a007H2cPdDPcVnyeA9FBHbliQA=="
+																										crossorigin="anonymous">
+																									</script>
 
 </body>
+
 </html>
