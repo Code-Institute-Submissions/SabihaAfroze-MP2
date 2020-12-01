@@ -19,23 +19,44 @@
 
 <body>
 
-	<nav class="navbar navbar-light bg">
-		<a class="navbar-brand"
-			href="toddler.html"><img src="assets/images/backbutton.png" alt="back"  class=" img-responsive center-block" style="height:50px;width:50px;" /></a>
+    <div class="fixed-top  ">
 
-			<form class="form-inline">
-				<a class="navbar-brand"
-					href="index.html"><img src="assets/images/home.gif" alt="home"  class=" img-responsive center-block" style="height:90px;width:90px;" /></a>
-			</form>
-	</nav>
+		<nav class="navbar navbar-light  bg">
+
+			<a class="navbar-brand"href="kids.html"><img src="assets/images/backbutton.png" alt="back"  class=" img-responsive center-block" style="height:50px;width:50px;" /></a>
+            <button class="navbar-toggler ml-auto float-right nav-button-color "  type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+		</nav>
+		<div class="collapse navbar-collapse mr-md-3" id="navbarToggleExternalContent">
+			<!-- Navbar Links -->
+			<ul class="navbar-nav ml-auto float-right text-center ul-color">
+				<li class="nav-item active ">
+					<a class="nav-link hvr-underline-from-center nav-item-color" href="index.html">Home
+						
+				</li>
+				<li class="nav-item dark-nav">
+					<a class="nav-link hvr-underline-from-center nav-item-color" href="kids.html">Kid</a>
+                    <span class="sr-only">(current home page)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hvr-underline-from-center nav-item-color" href="toddler.html">Toddler</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link hvr-underline-from-center nav-item-color" href="parents.html">Parent</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 
 	<div class="container-fluid mathstoddler ">
-		<h1 class="page-title text-center" style="padding-top:30px;">Maths & Numbers</h1>
+		<h1 class="page-title text-center" >Maths & Numbers</h1>
 
 
 		<!--The idea is taken and learned from https://www.sitepoint.com/simple-javascript-quiz/-->
 
-		<div class="quiz-container">
+		<div class="quiz-container" >
 
 
 			<form id="mathquiz" name="mathquiz">

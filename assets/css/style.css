@@ -81,7 +81,7 @@ body {
 }
 
 .bg-nav{
-    background-color: transparent;
+    
     margin-top: 0px;
     
 }
@@ -171,6 +171,7 @@ body {
   font-weight: normal;
   text-align: center;
   font-size: 5em;
+  padding-top:80px;
 }
 
 .game-info-container {
