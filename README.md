@@ -142,8 +142,10 @@ The video file at index.html page is collected from
 *   https://slack.com/
 *   https://www.google.com/
 *   https://www.youtube.com/watch?v=28VfzEiJgy4&t=82s
+*   https://jsfiddle.net/ryanpcmcquen/n37bdvzq/
 *   https://www.sitepoint.com/simple-javascript-quiz
 *   https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript
+*   https://www.emailjs.com/docs/tutorial/creating-contact-form/
 
 
 ##  Acknowledgements
