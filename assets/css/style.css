@@ -115,7 +115,9 @@ body {
   transform: scale(1.5); 
 }
 
-
+.page-style {
+    padding-top: 10%;
+}
 
 /*----style for maths4toddler.html----*/
 
@@ -368,4 +370,6 @@ body {
     width: 40%;
     
 }
+    .page-style{
+        padding-top:35%;}
 }
