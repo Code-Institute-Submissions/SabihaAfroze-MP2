@@ -327,7 +327,16 @@ body {
     padding-top:5%;
     padding-bottom:2%;
 }
-.hoverinfo {
+
+.hoverinfo span{
+    color:#ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 4px;
+}
+
+@media only screen and (min-width: 1025px)  {
+  .hoverinfo {
   
   text-align: center;
   font-size: 30px;
@@ -339,9 +348,13 @@ body {
   display: none;
   color: #000000;
   transition: opacity 0.3s;
+  text-decoration: none;
 }
 
 .hoverinfo:hover span {
   background-color: rgba(255, 255, 255, 0.7);
   display: block;
+  text-decoration: none;
+}
+
 }
