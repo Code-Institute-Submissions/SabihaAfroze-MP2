@@ -10,6 +10,9 @@ body {
 .bg-nav{
     background-color: transparent;
 }
+.logo {
+  height:3rem;
+}
 
 .nav-button-color {
     background-color: rgb(131, 3, 3)
@@ -373,4 +376,13 @@ body {
 }
     .page-style{
         padding-top:35%;}
+
+    .content {
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	z-index: 1000;
+	background-color: rgba(0, 0, 0, 0);
+    padding-top:30px;
+	}
 }

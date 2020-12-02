@@ -1,3 +1,6 @@
+const startButton = document.getElementById('start-btn')
+const nextButton = document.getElementById('next-btn')
+
 function check(){
 
 	var question1 = document.mathquiz.question1.value;
