@@ -1,11 +1,160 @@
-# MP2
+# MilestoneProject-2
 
-This website will serve the purpose of toddler and kid's fun brain activities. It will increase their thought capacity and IQ. 
+<h1 align="center"><a href="https://sabihaafroze.github.io/MP2/" target="_blank"><img src="assets/images/bglogo.png" alt="Website logo"/></a>
+</h1>
+
+<div align="center"> 
+
+[Braingame!]https://sabihaafroze.github.io/MP2/) is an educative and entertaining games designed for children aged between 4 to 9 years old. The children are grouped by toddler(4 to 6 years old) and kid (7 to 9 years old) so that they can use the website easily.
+Two types of games are built here: One is Number & Maths which is a count game and another one is Memory game with sound effect. Both games can be easily played and entertaining 
+as well as educative. For the parents there is another page where they can read the information about the games and they can also contact via the contact form for any query as well as their valuable feedback. 
+The website is very playful and colorful so that the children can enjoy the environment.
+<br>
+
+[View the Braingame page](https://sabihaafroze.github.io/MP2/)
+
+</div>
+
+## Table of Contents
+1. [**UX**](#ux)
+    - [**Project Goals**](#project-goals)
+    - [**Player goals**](#player-goals)
+    - [**Parental goals**](#parental-goals)
+    - [**Developer and Business Goals**](#developer-and-Business-Goals)
+    - [**User Stories**](#user-stories)
+    - [**Design choices**](#design-choices)
+    - [**Wireframes**](#wireframes)
+
+2. [**Features**](#features)
+    - [**Existing Features**](#existing-features)
+    - [**Features Left to Implement**](#features-left-to-implement)
+
+3. [**Technologies used**](#technologies-used)
+
+4. [**Testing**](#testing)
+
+5. [**Deployment**](#deployment)
+    - [**How to run this project locally**](#how-to-run-this-project-locally)
+
+6. [**Credits**](#credits)
+    - [**Content**](#content)
+    - [**Media**](#media)
+    - [**Code**](#code)
+    - [**Acknowledgements**](#acknowledgements)
+
+7. [**Disclaimer**](#disclaimer)
 
 
-## Business goals:
+## UX
 
-To provide a platform for children's indoor activity .
+### Project Goals
+
+The primary goal of Braingame website is to provide an educative, intuitive and child friendly game to entertain it's users.
+This website has three target audiences: Toddler (age between 4-6 years old), kid (age between 5-7 years old) and their parents. 
+
+#### Player goals
+
+The central target audience for this game is toddler and kids. Two different game page has also created so that they can understand easily and 
+game difficulty level is also desined as per their age.
+
+Players goals are:
+- A fun and educative game to play.
+- Layout is very colorful and child-friendly.
+- Large buttons and clickable areas for young fingers to operate. 
+- Fun images and sounds for memory game. 
+- Visual and audio rewards while playing.
+
+Braingame is a great way to help players meet these needs because:
+- The planning and design process took all these needs into account before starting to build it. 
+- Controls are grouped separately for smooth operation.
+- Game controls are large, utilising icons and colours to communicate their purpose so that they can easily understand.
+- Braingame includes audio for memory game and visual rewards for number game as part of the game.
+- The overall feel of Braingame is fun ,educative and child-friendly.
+
+#### Parental goals
+
+Parents of toddler and kids have a large amount of say about what games their children are exposed to, wether they sould watch video or they can play educative games
+therefore considering their worries these games are designed for children. 
+
+Parent's goals are:
+- A game with child development value. In this case to improve their memory and counting abilities.
+- Usability for the range of abilities for toddler and kid.
+- A visually appealing, well-functioning game. 
+- The ability for a parent to contact with the developer of the site so that they can share their thoughts and feedback easily.
+  They can also suggest where they wants any improvements.
+
+Braingame is a great way to help parents meet these needs because:
+- This gives a child a fun environment in which to practice their memory skills and counting ability as well. 
+- Game includes 2 types of difficulty for 2 different age range and also it is separated to make the operation smooth.
+- It has been designed with user experience as a priority, not only for a child using it but also for a parent.
+
+
+#### Developer and Business Goals
+
+- Well thought out programming To provide a platform for children's indoor activity which will really needed for this corona situtation.
+    The game cannot be broken by clicking many areas quickly, or if it is restarted at an unexpected moment. 
+- A professional looking first project of using JavaScript.
+- A project, the developer is excited to make a part of her portfolio. 
+
+#### User Stories
+
+As a player aged between 4-7 years old, I want:
+1. The ability to easily find and understand the controls for the game, so that I can operate them easily. 
+2. A large easy to input buttons and controls, so that my young fingers can use on all devices.
+3. Audio and/or visual feedback when I play the game, so that I feel enjoyable every moment.
+4. When I win, I want to see any visual or audio feedback which will cheer me.
+5. When I lose, I also need some visual or audio feedback to cheer me to do it again.
+
+
+As a parent of a player, I want:
+1. Clean webpage so that my child can easilty understand where to browse.
+2. A visually and operationally appealing game, so that I also have a positive experience when using it with my child.
+3. A fun game which will also educative and informative because I want my child to learn from fun. 
+4. To know who made the game and how I can contact them. 
+
+
+### Design Choices
+
+The overall feel of the game is one that is designed for children to enjoy. The following design choices were made with this in mind:
+
+**Fonts**
+
+- The primary font **Fredoka One** was chosen because it resembles the simple letters used in products made for pre-school children. It's likeness to fridge magnets for children is nostalgic for parents as well. 
+
+- The secondary font **Bubblegum Sans** was chosen for its childlike qualities, while complementing the primary font nicely in style because it is more compact.
+
+**Icons**
+
+- All icons used were chosen for their obvious meaning and purpose so that they can be understood by everyone.
+
+**Colours**
+
+- The primary colour choices of dark and light blue for the logo, titles and text were chosen because they have a clean clear aspect while contrasting each other well.
+- Other colours used in the project were taken from the trophy image sourced, using a colour picker in Photoshop to make sure all colours used were consistent across the entire project.
+
+**Styling**
+
+- Cards and container boxes were given rounded corners to continue the child friendly theme, many real life memory cards for children have corners like this. 
+- Repeating the same rounded corner pattern throughout the page keeps consistency in design and maintains the feeling that all elements belong together. 
+
+**Backgrounds**
+
+- The background image of toy trains was chosen to give the feeling of playing the game in a child's playroom. 
+- Specifically chosen because it is a "flat-lay" - a photograph taken from directly above - this means the background complements the game without distracting from it.
+- The background images for the modals were chosen for their comic-book like qualities, adding a little positive emotional feedback at a level that appeals to a child. 
+
+**Card images**
+
+- Disney and Pixar characters were chosen for this game because they are recognised and loved by children. 
+Cars characters were specifically chosen because it is extremely popular with boys, 
+the Frozen characters because they are very popular with girls, 
+and the Toy Story Characters because they appeal to both girls and boys. 
+
+**Audio files**
+
+- To continue the feeling of a game made for children, clicking button sounds were added that are similar to the sounds a child might hear when operating a physical toy with buttons. 
+- The card flipping sounds and "bing" on a correct match were added to give positive feedback on use of the game. 
+- The sound of applauding children played on completing the game was chosen because it appeals most to children, and again fits within the theme of PicFlip!
 
 ## Goals of users:
 
