@@ -10,7 +10,7 @@
     - [**Validation services**](#validation-services)
 2. [**Client Stories Testing**](#client-stories-testing)
 3. [**Manual Testing**](#manual-testing)
-    - [**Testing undertaken on desktop**](#testing-undertaken-on-desktop) Testing undertaken on tablet and phone devices
+    - [**Testing undertaken on desktop**](#testing-undertaken-on-desktop) 
     - [**Testing undertaken on tablet and phone devices**](#testing-undertaken-on-tablet-and-phone-devices)
 4. [**Bugs discovered**](#bugs-discovered)
     - [**Solved bugs**](#solved-bugs)
@@ -33,7 +33,7 @@ The following section goes through each of the user stories from the UX section 
 
 **As a player, I want:**
 
-1. **To find everything for me easily and operate smoothly.**
+1. **To find everything easily and operate smoothly.**
 
     - To clearly understand the age group there are two different icon for toddler and kid.
     - If they hover on it they can see the range of age and for tablet and other mobile device these hints are visible as there is no hover for them. 
