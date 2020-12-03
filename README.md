@@ -115,54 +115,41 @@ As a parent of a player, I want:
 
 ### Design Choices
 
-The overall feel of the game is one that is designed for children to enjoy. The following design choices were made with this in mind:
+The overall feel of the website is one that is designed for children to enjoy. The following design choices were made with this in mind:
 
 **Fonts**
 
-- The primary font **Fredoka One** was chosen because it resembles the simple letters used in products made for pre-school children. It's likeness to fridge magnets for children is nostalgic for parents as well. 
-
-- The secondary font **Bubblegum Sans** was chosen for its childlike qualities, while complementing the primary font nicely in style because it is more compact.
+- The primary font **Love Ya Like A Sister** was chosen because it resembles the simple letters and very child-friendly look.
 
 **Icons**
 
 - All icons used were chosen for their obvious meaning and purpose so that they can be understood by everyone.
 
-**Colours**
+**Logo**
 
-- The primary colour choices of dark and light blue for the logo, titles and text were chosen because they have a clean clear aspect while contrasting each other well.
-- Other colours used in the project were taken from the trophy image sourced, using a colour picker in Photoshop to make sure all colours used were consistent across the entire project.
+-The logo is designed with vibrant color so the user can like it.
+
+**Colors**
+
+- The overall color of the website is very playful and vibrant so the user can enjoy it.
 
 **Styling**
 
-- Cards and container boxes were given rounded corners to continue the child friendly theme, many real life memory cards for children have corners like this. 
-- Repeating the same rounded corner pattern throughout the page keeps consistency in design and maintains the feeling that all elements belong together. 
+- Maths & Numbers game is loaded with lots of colorful pictures which will help the children to count easily.
+- The memory game is styled with moving the cards and while two cards matched it will dance together so that the children can have fun.
 
 **Backgrounds**
 
-- The background image of toy trains was chosen to give the feeling of playing the game in a child's playroom. 
-- Specifically chosen because it is a "flat-lay" - a photograph taken from directly above - this means the background complements the game without distracting from it.
-- The background images for the modals were chosen for their comic-book like qualities, adding a little positive emotional feedback at a level that appeals to a child. 
-
-**Card images**
-
-- Disney and Pixar characters were chosen for this game because they are recognised and loved by children. 
-Cars characters were specifically chosen because it is extremely popular with boys, 
-the Frozen characters because they are very popular with girls, 
-and the Toy Story Characters because they appeal to both girls and boys. 
+- The background video of index.html page has been chosen to represent the vastness of children's mind. Children's brains are vast like the universe and they have the potentiality to shine like stars 
+- The memory game cards are chosen fruits and animals so that the overall educative game pusrpose can be maintained.
+- The overall background color and images are very vibrant and cheerful color to catch the chidren's attention. 
 
 **Audio files**
 
-- To continue the feeling of a game made for children, clicking button sounds were added that are similar to the sounds a child might hear when operating a physical toy with buttons. 
-- The card flipping sounds and "bing" on a correct match were added to give positive feedback on use of the game. 
-- The sound of applauding children played on completing the game was chosen because it appeals most to children, and again fits within the theme of PicFlip!
+- The audio files added to the memory game are very suitable for maintaing the cheerful environment for kids. 
 
-## Goals of users:
 
-Many parents are very anxious about their children's inactiveness during this lock-down situation. So, this website will make their child happy with some brain games that will make them active and happy.
-
-# UX
-## Ideal User
-### Users visiting my website would be:
+#### Users visiting my website would be:
 
 *   From any kids or parents in the World
 *   Brain game lover

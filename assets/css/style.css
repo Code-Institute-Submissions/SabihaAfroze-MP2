@@ -1,5 +1,5 @@
 /*
-* Prefixed by https://autoprefixer.github.io
+* Prefixed by qttps://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
@@ -149,6 +149,12 @@ body {
 .mathstoddler{
     background: -o-radial-gradient(rgba(238, 255, 0, 0.904), rgba(218, 59, 32, 0.973));
     background: radial-gradient(rgba(238, 255, 0, 0.904), rgba(218, 59, 32, 0.973));
+}
+
+.question{
+    padding-top:10px;
+    background-color: rgba(128, 128, 128, 0.336);
+    color:black;
 }
 
 #button {

@@ -1,3 +1,5 @@
+//
+
 function check(){
 
 	var question1 = document.mathquiz.question1.value;
@@ -16,9 +18,11 @@ function check(){
     if (question1 == "1") {
 		correct++;
     }
+    
 	if (question2 == "2") {
 		correct++;
-    }	
+    }
+    	
 	if (question3 == "2") {
 		correct++;
     }
@@ -35,6 +39,7 @@ function check(){
 		correct++;
     }
 
+
     if (question7 == "1") {
 		correct++;
     }
@@ -50,6 +55,8 @@ function check(){
     if (question10 == "1") {
 		correct++;
     }
+
+    
 
     var pictures = ["assets/images/result/trophy.gif", "assets/images/result/nice.gif","assets/images/result/retry.gif"];
 	var messages = ["Congratulations!", "You are doing great!","Don't give up!"];
@@ -74,5 +81,17 @@ function check(){
 	document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
     document.getElementById("picture").src = pictures[score];
     console.log(correct);
+
+
+    if (question1 == ""||question2 == ""||question3 == ""||question4 == ""||question5 == ""||question6 == ""||question7 == ""||question8 == ""||question9 == ""||question10 == "") {
+		alert( "Please provide all the answers!" );
+        document.getElementById("results_maths").style.visibility = "hidden";
     }
+    
+
+
+    
+    
+    }
+
     

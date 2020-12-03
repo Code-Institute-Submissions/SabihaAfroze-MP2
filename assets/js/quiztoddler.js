@@ -77,5 +77,12 @@ function check(){
 	document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
     document.getElementById("picture").src = pictures[score];
     console.log(correct);
+
+    if (question1 == ""||question2 == ""||question3 == ""||question4 == ""||question5 == ""||question6 == ""||question7 == ""||question8 == ""||question9 == ""||question10 == "") {
+		alert( "Please provide all the answers!" );
+        document.getElementById("results_maths").style.visibility = "hidden";
+    }
+
+
     }
     
