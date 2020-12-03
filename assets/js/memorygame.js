@@ -1,3 +1,5 @@
+//All the controls for audio are kept here//
+
 class AudioController {
     constructor() {
         this.bgMusic = new Audio('assets/audio/memorygame.mp3');
@@ -9,14 +11,21 @@ class AudioController {
         this.bgMusic.loop = true;
     }
 
+//For starting music//
+
     startMusic() {
         this.bgMusic.play();
     }
+
+//For stopping music//
 
     stopMusic(){
         this.bgMusic.pause();
         this.bgMusic.currentTime = 0;
     }
+
+//sound for flip,match,win and time over//
+
     flip() {
         this.flipSound.play();
     }
@@ -44,6 +53,8 @@ class AudioController {
         this.audioController = new AudioController();
     }
 
+//For starting game //
+
     startGame() {
         this.totalClicks = 0;
         this.timeRemaining = this.totalTime;
@@ -61,6 +72,8 @@ class AudioController {
         this.ticker.innerText = this.totalClicks;
     }
 
+//For timing //
+
     startCountdown() {
         return setInterval(() => {
             this.timeRemaining--;
@@ -75,6 +88,8 @@ class AudioController {
         this.audioController.timeOver();
         document.getElementById('time-over-text').classList.add('visible');
     }
+
+//For result//
 
     victory() {
         clearInterval(this.countdown);
@@ -102,6 +117,8 @@ class AudioController {
             }
         }
     }
+
+//For checking the matched pair//
 
     checkForBlockMatch(block) {
         if(this.getBlockType(block) === this.getBlockType(this.blockToCheck))
@@ -131,6 +148,8 @@ class AudioController {
         }, 1000);
     }
 
+//For shuffling the block//
+
     shuffleBlocks(blocksArray) { // Fisher-Yates Shuffle Algorithm.
         for (let i = blocksArray.length-1; i > 0; i--) {
             let randIndex = Math.floor(Math.random() * (i + 1));
@@ -149,6 +168,8 @@ class AudioController {
     if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);}
      else { ready();}
+
+// Ready function for page loading activities//
 
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));

@@ -1,4 +1,4 @@
-//
+//check function from html is written here//
 
 function check(){
 
@@ -14,6 +14,8 @@ function check(){
     var question10 = document.mathquiz.question10.value;
     
     var correct = 0;
+
+    //if condition applied to get the correct value of the variable question//
     
     if (question1 == "1") {
 		correct++;
@@ -56,7 +58,7 @@ function check(){
 		correct++;
     }
 
-    
+    //For getting 3 different range of correct answers, 3 different picture message will produce//
 
     var pictures = ["assets/images/result/trophy.gif", "assets/images/result/nice.gif","assets/images/result/retry.gif"];
 	var messages = ["Congratulations!", "You are doing great!","Don't give up!"];
@@ -82,7 +84,7 @@ function check(){
     document.getElementById("picture").src = pictures[score];
     console.log(correct);
 
-
+    //Alert message will be displayed for empty form submission//
     if (question1 == ""||question2 == ""||question3 == ""||question4 == ""||question5 == ""||question6 == ""||question7 == ""||question8 == ""||question9 == ""||question10 == "") {
 		alert( "Please provide all the answers!" );
         document.getElementById("results_maths").style.visibility = "hidden";
